@@ -1,0 +1,45 @@
+---
+layout: default
+title: Games
+permalink: /games
+pagination:
+  enabled: true
+  collection: games
+---
+<h2>Games</h2>
+<ul class="list-group">
+{% for game in paginator.posts %}
+    <li class="list-group-item"{% if game.official %} style="background: #ffdddd77"{% endif %}>
+        <div class="row align-items-center">
+            <div class="col-2 d-none d-lg-block">
+                {% if game.images %}
+                    <img src="/assets/images/{{ game.images | first }}" class="w-100 float-start">
+                {% endif %}
+            </div>
+            <div class="col">
+                <h3><a href="{{ game.url }}">{{ game.title }}</a></h3>
+                <h4>{{ game.circle }}</h4>
+                <h5>{{ game.release-date }}</h5>
+            </div>
+        </div>
+    </li>
+{% endfor %}
+<nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center mt-3">
+    <li class="page-item{% unless paginator.previous_page %} disabled{% endunless %}"><a class="page-link" href="{{ paginator.previous_page_path }}">Previous</a></li>
+    {% if paginator.previous_page > 1 %}
+        <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+    {% endif %}
+    {% if paginator.previous_page %}
+        <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path }}">{{ paginator.previous_page }}</a></li>
+    {% endif %}
+    <li class="page-item active"><a class="page-link" href="#">{{ paginator.page }}</a></li>
+    {% if paginator.next_page %}
+        <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path }}">{{ paginator.next_page }}</a></li>
+    {% endif %}
+    {% if paginator.next_page < paginator.total_pages %}
+        <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+    {% endif %}
+    <li class="page-item{% unless paginator.next_page %} disabled{% endunless %}"><a class="page-link" href="{{ paginator.next_page_path }}">Next</a></li>
+  </ul>
+</nav>
