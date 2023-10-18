@@ -9,7 +9,7 @@ pagination:
 <h2>Games</h2>
 <ul class="list-group">
 {% for game in paginator.posts %}
-    <li class="list-group-item"{% if game.official %} style="background: #ffdddd77"{% endif %}>
+    <li class="list-group-item">
         <div class="row align-items-center">
             <div class="col-2 d-none d-lg-block">
                 {% if game.images %}
