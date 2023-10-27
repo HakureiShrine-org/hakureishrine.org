@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<section class="hero">
+    <div class="hero-body">
+        <p class="title">{{ page.title }}</p>
+    </div>
+</section>
+<section class="section columns is-multiline">
+{% for game in paginator.posts %}
+    <div class="column is-one-third">
+        <div class ="card">
+            <div class="card-image">
+                <figure class="image is-16by9">
+                    <img src="/assets/images/{{ game.images.first }}"  style="background: lightgray; object-fit: contain;">
+                </figure>
+            </div>
+            <div class="card-content">
+                <p href="" class="title is-5" style="margin-bottom: 0.1em;">
+                    <a href="{{ game.url }}">{{ game.title }}</a>
+                    {% if game.tags contains "official" %}
+                        <span class="tag is-danger">Official</span>
+                    {% endif %}
+                </p>
+                <p>{{ game.circle }}</p>
+                <p>{{ game.date | date_to_string }}</p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</section>
+{% if paginator.total_pages > 1 %}
+    <nav class="section pagination is-centered" role="navigation">
+        <ul class="pagination-list">
+            <li><span class="pagination-ellipsis{% if paginator.page_trail.first.num <= 1 %} is-invisible{% endif %}">&hellip;</span></li>
+            {% for trail in paginator.page_trail %}
+                <li>
+                    <a {% unless page.url == trail.path %}href="{{ trail.path | prepend: site.baseurl }}"{% endunless %}class="pagination-link{% if page.url == trail.path %} is-current{% endif %}">{{ trail.num }}</a>
+                </li>
+            {% endfor %}
+            <li><span class="pagination-ellipsis{% if paginator.page_trail.last.num >= paginator.total_pages %} is-invisible{% endif %}">&hellip;</span></li>
+        </ul>
+    </nav>
+{% endif %}

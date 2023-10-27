@@ -1,0 +1,5 @@
+<article class="message{% if include.color %} is-{{ include.color }}{% endif %}">
+    <div class="message-body">
+        {{ include.content | markdownify }}
+    </div>
+</article>

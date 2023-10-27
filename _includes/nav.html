@@ -1,21 +1,40 @@
-<nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
-  <div class="container-md">
-    <a class="navbar-brand" href="/">HakureiShrine.org</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/games">Games</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/faq">FAQ</a>
-        </li>
-      </ul>
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">HakureiShrine.org</a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbar" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item">Home</a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="/games" class="navbar-link">Games</a>
+                    <div class="navbar-dropdown">
+                        <a href="/games/tag/official" class="navbar-item">Official</a>
+                        <a href="/games/tag/fangame" class="navbar-item">Fangames</a>
+                    </div>
+                </div>
+                <a href="/faq" class="navbar-item">FAQ</a>
+                <a href="https://www.touhouwiki.net/" class="navbar-item">Wiki</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field has-addons">
+                        <p class="control">
+                            <input class="input" type="text" placeholder="Search">
+                        </p>
+                        <p class="control">
+                            <a href="/search" type="submit" class="button is-primary">
+                                <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </nav>
