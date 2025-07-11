@@ -9,9 +9,9 @@ links:
   - name: Steam
     label: Purchase (DL)
     url: https://store.steampowered.com/app/1100140/Touhou_Fuujinroku__Mountain_of_Faith/
-  - name: AmiAmi
-    label: Purchase (Physical)
-    url: https://www.amiami.com/detail/?gcode=GAME-0016202
+#  - name: AmiAmi
+#    label: Purchase (Physical)
+#    url: https://www.amiami.com/detail/?gcode=GAME-0016202
   - name: Melonbooks
     label: Purchase (Physical)
     url: https://www.melonbooks.co.jp/detail/detail.php?product_id=31924

@@ -9,9 +9,9 @@ links:
   - name: Steam
     label: Purchase (DL)
     url: https://store.steampowered.com/app/1420810/Touhou_Kaeizuka__Phantasmagoria_of_Flower_View/
-  - name: AmiAmi
-    label: Purchase (Physical)
-    url: https://www.amiami.com/detail/?gcode=GAME-0016201
+#  - name: AmiAmi
+#    label: Purchase (Physical)
+#    url: https://www.amiami.com/detail/?gcode=GAME-0016201
   - name: Melonbooks
     label: Purchase (Physical)
     url: https://www.melonbooks.co.jp/detail/detail.php?product_id=31917

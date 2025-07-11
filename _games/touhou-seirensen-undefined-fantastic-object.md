@@ -9,9 +9,9 @@ links:
   - name: Steam
     label: Purchase (DL)
     url: https://store.steampowered.com/app/1100160/Touhou_Seirensen__Undefined_Fantastic_Object/
-  - name: AmiAmi
-    label: Purchase (Physical)
-    url: https://www.amiami.com/detail/?gcode=GAME-0016204
+#  - name: AmiAmi
+#    label: Purchase (Physical)
+#    url: https://www.amiami.com/detail/?gcode=GAME-0016204
   - name: Melonbooks
     label: Purchase (Physical)
     url: https://www.melonbooks.co.jp/detail/detail.php?product_id=31951

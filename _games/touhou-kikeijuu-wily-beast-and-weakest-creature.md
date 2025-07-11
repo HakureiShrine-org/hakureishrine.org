@@ -12,9 +12,9 @@ links:
   - name: DLsite
     label: Purchase (DL)
     url: https://www.dlsite.com/home/work/=/product_id/RJ254844.html
-  - name: AmiAmi
-    label: Purchase (Physical)
-    url: https://www.amiami.com/detail/?gcode=GAME-0022442
+#  - name: AmiAmi
+#    label: Purchase (Physical)
+#    url: https://www.amiami.com/detail/?gcode=GAME-0022442
   - name: Melonbooks
     label: Purchase (Physical)
     url: https://www.melonbooks.co.jp/detail/detail.php?product_id=530691
