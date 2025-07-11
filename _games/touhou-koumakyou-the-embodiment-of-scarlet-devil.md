@@ -19,8 +19,8 @@ links:
     label: Download
     url: https://www.thpatch.net/wiki/Touhou_Patch_Center:Download
 images:
-  - touhou-komakyou-the-embodiment-of-scarlet-devil1.jpg
-  - touhou-komakyou-the-embodiment-of-scarlet-devil2.jpg
+  - touhou-koumakyou-the-embodiment-of-scarlet-devil1.jpg
+  - touhou-koumakyou-the-embodiment-of-scarlet-devil2.jpg
 ---
 {% include message.html color="info" content="This game is only available physically. There is no official download version." %}
 {% include message.html color="warning" content="You will likely encounter issues running the game on newer versions of Windows. Additional patches will be required for the game to run properly. Refer to [this page](https://maribelhearn.com/faq/eosd) for more information." %}
