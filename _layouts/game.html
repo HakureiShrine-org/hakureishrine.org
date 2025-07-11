@@ -12,6 +12,8 @@ carousel: true
         </p>
         {% if page.title-ja %}
             <p class="subtitle">{{ page.title-ja }}</p>
+        {% elsif page.title-cn %}
+            <p class="subtitle">{{ page.title-cn }}</p>
         {% endif %}
     </div>
 </section>
@@ -35,6 +37,8 @@ carousel: true
             <p class="title is-spaced">{{ page.circle }}</p>
             {% if page.circle-ja %}
                 <p class="subtitle">{{ page.circle-ja }}</p>
+            {% elsif page.circle-cn %}
+                <p class="subtitle">{{ page.circle-cn }}</p>
             {% endif %}
         </div>
     </div>
