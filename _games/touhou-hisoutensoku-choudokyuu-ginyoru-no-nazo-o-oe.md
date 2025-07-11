@@ -17,6 +17,6 @@ links:
     url: https://www.thpatch.net/wiki/Touhou_Patch_Center:Download
 ---
 {% include message.html color="info" content="This game is only available physically. There is no official download version." %}
-{% include message.html color="info" content="This is a standalone expansion to [Touhou Hisouten ~ Scarlet Weather Rhapsody]({% link _games/touhou-hisouten-scarlet-weather-rhapsody.md %}). Linking your game installations will unlock additional characters. Refer to [this page](https://hisouten.koumakan.jp/wiki/Config#Linking_Touhou_Hisoutensoku_with_SWR) for more information." %}
+{% include message.html color="info" content="This is a standalone expansion to [Touhou Hisouten ~ Scarlet Weather Rhapsody](/games/touhou-hisouten-scarlet-weather-rhapsody.html). Linking your game installations will unlock additional characters. Refer to [this page](https://hisouten.koumakan.jp/wiki/Config#Linking_Touhou_Hisoutensoku_with_SWR) for more information." %}
 
 This game currently has no description.
